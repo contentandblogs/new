@@ -236,7 +236,7 @@ var items = ['Chanay ki daal','daal fry','white daal','Kaali daal','spaghetti','
     const tue = JSON.parse(tu);
 
 
-    if(fri.Friday.Dish_name == ''){localStorage.setItem("Friday", JSON.stringify(Friday));}else{document.getElementById('Sunday').innerText = fri.Friday.Dish_name;}
+    if(fri == undefined){localStorage.setItem("Friday", JSON.stringify(Friday));}else if(fri.Friday.Dish_name == ''){localStorage.setItem("Friday", JSON.stringify(Friday));}else{document.getElementById('Sunday').innerText = fri.Friday.Dish_name;}
     if(sat.Saturday.Dish_name == ''){localStorage.setItem("Saturday", JSON.stringify(Saturday));}else{document.getElementById('Monday').innerText = sat.Saturday.Dish_name;}
     if(sun.Sunday.Dish_name == ''){localStorage.setItem("Sunday", JSON.stringify(Sunday));}else{document.getElementById('Tuesday').innerText = sun.Sunday.Dish_name;}
     if(mon.Monday.Dish_name == ''){localStorage.setItem("Monday", JSON.stringify(Monday));}else{document.getElementById('Wednesday').innerText = mon.Monday.Dish_name;}

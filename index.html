@@ -237,12 +237,12 @@ var items = ['Chanay ki daal','daal fry','white daal','Kaali daal','spaghetti','
 
 
     if(fri == undefined){localStorage.setItem("Friday", JSON.stringify(Friday));}else if(fri.Friday.Dish_name == ''){localStorage.setItem("Friday", JSON.stringify(Friday));}else{document.getElementById('Sunday').innerText = fri.Friday.Dish_name;}
-    if(sat.Saturday.Dish_name == ''){localStorage.setItem("Saturday", JSON.stringify(Saturday));}else{document.getElementById('Monday').innerText = sat.Saturday.Dish_name;}
-    if(sun.Sunday.Dish_name == ''){localStorage.setItem("Sunday", JSON.stringify(Sunday));}else{document.getElementById('Tuesday').innerText = sun.Sunday.Dish_name;}
-    if(mon.Monday.Dish_name == ''){localStorage.setItem("Monday", JSON.stringify(Monday));}else{document.getElementById('Wednesday').innerText = mon.Monday.Dish_name;}
-    if(tue.Tuesday.Dish_name == ''){localStorage.setItem("Tuesday", JSON.stringify(Tuesday));}else{document.getElementById('Thursday').innerText = tue.Tuesday.Dish_name;}
-    if(wed.Wednesday.Dish_name == ''){localStorage.setItem("Wednesday", JSON.stringify(Wednesday));}else{document.getElementById('Friday').innerText = wed.Wednesday.Dish_name;}
-    if(thr.Thursday.Dish_name == ''){localStorage.setItem("Thursday", JSON.stringify(Thursday));}else{document.getElementById('Saturday').innerText = thr.Thursday.Dish_name;}
+    if(sat == undefined){localStorage.setItem("Saturday", JSON.stringify(Saturday));}else if(sat.Saturday.Dish_name == ''){localStorage.setItem("Saturday", JSON.stringify(Saturday));}else{document.getElementById('Monday').innerText = sat.Saturday.Dish_name;}
+    if(sun == undefined){localStorage.setItem("Sunday", JSON.stringify(Sunday));}else if(sun.Sunday.Dish_name == ''){localStorage.setItem("Sunday", JSON.stringify(Sunday));}else{document.getElementById('Tuesday').innerText = sun.Sunday.Dish_name;}
+    if(mon == undefined){localStorage.setItem("Monday", JSON.stringify(Monday));}else if(mon.Monday.Dish_name == ''){localStorage.setItem("Monday", JSON.stringify(Monday));}else{document.getElementById('Wednesday').innerText = mon.Monday.Dish_name;}
+    if(tue == undefined){localStorage.setItem("Tuesday", JSON.stringify(Tuesday));}else if (tue.Tuesday.Dish_name == ''){localStorage.setItem("Tuesday", JSON.stringify(Tuesday));}else {document.getElementById('Thursday').innerText = tue.Tuesday.Dish_name;}
+    if(wed == undefined){localStorage.setItem("Wednesday", JSON.stringify(Wednesday));}else if(wed.Wednesday.Dish_name == ''){localStorage.setItem("Wednesday", JSON.stringify(Wednesday));}else{document.getElementById('Friday').innerText = wed.Wednesday.Dish_name;}
+    if(thr == undefined){localStorage.setItem("Thursday", JSON.stringify(Thursday));}else if(thr.Thursday.Dish_name == ''){localStorage.setItem("Thursday", JSON.stringify(Thursday));}else{document.getElementById('Saturday').innerText = thr.Thursday.Dish_name;}
         
     
     
